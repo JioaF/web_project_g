@@ -1,0 +1,92 @@
+/* initiate variable for color */
+
+/* other color palet for references :
+https://colorhunt.co/palette/fff9caffdeb4ffb4b4b2a4ff
+*/
+
+:root {
+    --color1: #dfa0eb;
+    --color2: #f28be7;
+    --color3: #f6a9d3;
+    --color4: #f8d8c2;
+    --color5: #f8efb7;
+    --debugging: red;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color5);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* start of navigation */
+.navigation {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    background-color: var(--color2);
+    height: 10vh;
+}
+
+.navigation nav {
+    padding: 16px;
+    /* border: 1px solid var(--debugging); */
+    height: inherit;
+}
+
+.navigation nav a {
+    color: var(--color5);
+    margin-right: 12px;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+/* end of navigation */
+
+/* start of content */
+
+.content {
+    height: auto;
+    text-align: center;
+    background-color: var(--color3);
+}
+
+.content .introduction {
+    margin-top: 20vh;
+    height: 70vh;
+}
+
+.content .introduction header {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    gap: 16px;
+}
+
+.content .introduction header img {
+    height: inherit;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 1);
+}
+
+.content .introduction header h1 {
+    height: inherit;
+    letter-spacing: 4px;
+    line-height: 150px;
+    display: inline;
+    font-size: 52px;
+}
+
+.content .introduction p {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+/* end of content */
