@@ -35,13 +35,13 @@ body {
     height: 10vh;
 }
 
-.navigation nav {
+.navigation {
     padding: 16px;
     /* border: 1px solid var(--debugging); */
     height: inherit;
 }
 
-.navigation nav a {
+.navigation a {
     color: var(--color5);
     margin-right: 12px;
     text-decoration: none;
@@ -87,6 +87,5 @@ body {
     font-size: 20px;
     letter-spacing: 2px;
 }
-
 
 /* end of content */
