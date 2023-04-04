@@ -65,6 +65,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     height: 80vh;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 .content .introduction header {
@@ -92,20 +93,22 @@ body {
     font-size: 20px;
     letter-spacing: 2px;
 }
-
-.content .introduction{
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
 /* end of intro */
 
 /* start of catalog */
 
 .content .catalog{
     padding: 20vh;
-    margin-top: 20vh;
     margin-left: auto;
     margin-right: auto;
     height: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+}
+
+.content .catalog h2{
+    font-size: 48px;
+    margin-bottom: 4vh;
 }
 
 .content .catalog .container{
@@ -148,6 +151,36 @@ body {
 
 
 /* end of catalog */
+
+/* start of about */
+
+.content .about{
+    padding: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.about .description{
+    border: 1px solid var(--debugging);
+    margin-bottom: 4vh;
+}
+
+.about .description h3{
+    font-size: 44px;
+    margin-bottom: 2vh;
+}
+
+.about .contacts{
+    border: 1px solid var(--debugging);
+}
+
+.about .contacts h4{
+    font-size: 40px;
+    margin-bottom: 2vh;
+}
+
+/* end of about */
 
 
 /* end of content */
