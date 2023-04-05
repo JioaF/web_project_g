@@ -4,6 +4,11 @@
 https://colorhunt.co/palette/fff9caffdeb4ffb4b4b2a4ff
 */
 
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url(/public/fonts/Cookies.ttf);
+}
+
 :root {
     --color1: #dfa0eb;
     --color2: #f28be7;
@@ -22,7 +27,7 @@ https://colorhunt.co/palette/fff9caffdeb4ffb4b4b2a4ff
 
 body {
     position: relative;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: MontserratSemiBold;
     color: var(--color5);
     width: 100%;
     display: flex;
@@ -72,7 +77,7 @@ body {
     display: flex;
     justify-content: center;
     height: 200px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     gap: 16px;
 }
 
@@ -98,24 +103,25 @@ body {
 /* start of catalog */
 
 .content .catalog{
+    background-color: var(--color1);
     padding: 20vh;
     margin-left: auto;
     margin-right: auto;
     height: auto;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
-
 }
 
 .content .catalog h2{
     font-size: 48px;
+    letter-spacing: 4px;
     margin-bottom: 4vh;
 }
 
 .content .catalog .container{
     display: flex;
-    padding: 20px;
+    padding: 16px;
     border-radius: 8px;
-    width: 100%;
+    /* width: 100%; */
     background-color: var(--color4);
     flex-direction: row;
     justify-content: center;
@@ -126,8 +132,8 @@ body {
 .catalog .container div{
     background-color: var(--color-6);
     border-radius: 4px;
-    height: auto;
-    width: auto;
+    /* height: auto;
+    width: auto; */
 }
 
 .catalog .container div img{
@@ -139,7 +145,7 @@ body {
 }
 
 .catalog .container div table{
-    color: black;
+    color: rgba(0, 0, 0, .4);
     border-top: 1px solid rgba(0, 0, 0, .1);
     background-color: antiquewhite;
     border-collapse: collapse;
