@@ -5,7 +5,7 @@ https://colorhunt.co/palette/fff9caffdeb4ffb4b4b2a4ff
 */
 
 @font-face {
-    font-family: MontserratSemiBold;
+    font-family: Cookies;
     src: url(/public/fonts/Cookies.ttf);
 }
 
@@ -27,7 +27,7 @@ https://colorhunt.co/palette/fff9caffdeb4ffb4b4b2a4ff
 
 body {
     position: relative;
-    font-family: MontserratSemiBold;
+    font-family: Cookies;
     color: var(--color5);
     width: 100%;
     display: flex;
@@ -100,63 +100,52 @@ body {
 }
 /* end of intro */
 
-/* start of catalog */
+/* start of talents */
 
-.content .catalog{
+.content .talents{
     background-color: var(--color1);
     padding: 20vh;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+    margin: 0 auto;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+    height: auto;
 }
 
-.content .catalog h2{
+.content .talents h2{
     font-size: 48px;
     letter-spacing: 4px;
     margin-bottom: 4vh;
 }
 
-.content .catalog .container{
+.content .talents .container{
     display: flex;
     padding: 16px;
     border-radius: 8px;
     /* width: 100%; */
-    background-color: var(--color4);
+    /* background-color: var(--color4); */
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 20px;
 }
 
-.catalog .container div{
+.talents .container a{
+    display: block;
     background-color: var(--color-6);
     border-radius: 4px;
-    /* height: auto;
-    width: auto; */
+    height: auto;
+    width: auto;
 }
 
-.catalog .container div img{
+
+.talents .container a img{
     padding-bottom: 8px;
     margin: 10px auto;
     display: block;
-    height: 190px;
-    width: 190px;
+    height: 200px;
+    width: 200px;
 }
 
-.catalog .container div table{
-    color: rgba(0, 0, 0, .4);
-    border-top: 1px solid rgba(0, 0, 0, .1);
-    background-color: antiquewhite;
-    border-collapse: collapse;
-}
-
-.catalog .container div table tr, td{
-    padding: 8px;
-}
-
-
-/* end of catalog */
+/* end of talents */
 
 /* start of about */
 
