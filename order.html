@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style.css">
+    <title>Order Commission</title>
+</head>
+<body>
+    <main class="order">
+        <h1>You can order Art Product from here</h1>
+        <p>*Note: this is still experimental</p>
+        <div class="backbtn">
+            <a href="./index.html">Back</a>
+        </div>
+        <form class="form">
+            <h2>Order Form</h2>
+            <div class="input">
+                <label for="">Email</label>
+                <input type="email" name="" id="email" placeholder="person@example.com">
+            </div>
+            <div class="input">
+                <label for="">Comission</label>
+                <select name="" id="comis">
+                    <option value="">--Please Choose--</option>
+                    <option value="ganci">Ganci</option>
+                    <option value="poster">Poster</option>
+                    <option value="sticker">Sticker</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="">Art Chara</label>
+                <input type="text" name="" id="art" placeholder="Genshin">
+            </div>
+            <div class="button">
+                <input type="submit" value="Order">
+            </div>
+        </form>
+        <!-- <p>The item and payment method will be sent via email</p> -->
+        <section class="data-wrapper">
+            <h3>Data Table</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Email</th>
+                        <th>Comission</th>
+                        <th>Art</th>
+                        <th>Paid</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <td colspan="5">No data</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="./public/order.js"></script>
+</body>
+</html>
