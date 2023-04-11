@@ -152,10 +152,10 @@ body {
     height: auto;
     width: auto;
 }
+
 .talents .container a:hover{
     animation: fade-in;
-    animation-duration: .8s;
-    animation-delay: .1s;
+    animation-duration: 1s;
 }
 
 
@@ -210,6 +210,16 @@ body {
     text-align: justify;
 }
 
+.about p a{
+    color: var(--util1);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.about p a:hover{
+    opacity: .7;
+}
+
 .about h4{
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -241,3 +251,104 @@ body {
 
 
 /* end of content */
+
+/* start of order */
+.order{
+    letter-spacing: 2;
+    height: auto;
+    text-align: center;
+    padding: 20vh;
+    height: 100vh;
+    background-color: var(--color2);
+}
+
+.order .form{
+    border: 2px solid var(--color2);
+    display: table;
+    border-collapse: separate;
+    border-spacing: 8px;
+    text-align: center;
+    padding: 16px;
+    margin: 16px auto;
+    width: 40%;
+    background-color: var(--color3);
+}
+
+.form .input{
+    font-size: 20px;
+    display: table-row;
+    text-align: start;
+}
+
+.form .input label{
+    display: table-cell;
+    padding: 8px;
+}
+
+.form .input input, select{
+    display: table-cell;
+    padding: 8px;
+    width: 100%;
+}
+
+.input select{
+    text-align: center;
+}
+
+.form .button{
+    width: 100%;
+    text-align: center;
+}
+
+.form .button input{
+    padding: 8px;
+    width: inherit;
+}
+
+
+.order .table{
+    text-align: center;
+    width: 70%;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+.table tr th{
+    background-color: var(--color4);
+}
+
+.table tr:nth-child(odd){
+    background-color: var(--color5);
+}
+
+.table tr:nth-child(even){
+    background-color: var(--color6);
+}
+
+.table tr, th, td{
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.backbtn{
+    margin: 10px auto;
+    padding: 12px 28px;
+    letter-spacing: 1.2;
+    font-size: 20px;
+    background-color: var(--color3);
+    border-radius: 8px;
+    width: 40%;
+}
+
+.backbtn a{
+    color: var(--util1);
+    text-decoration: none;
+}
+
+.backbtn a:hover{
+    opacity: .7;
+}
+
+/* end of order */

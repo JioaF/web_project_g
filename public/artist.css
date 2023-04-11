@@ -143,6 +143,7 @@ a{
     justify-content: center;
     flex-direction: row;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .artist .sample header{
@@ -157,9 +158,9 @@ a{
     background-color: var(--util1);
     text-align: center;
     line-height: 25vh;
-    background-image: url(../public/images/yui/Dazai.png);
     background-size: contain;
     background-repeat: no-repeat;
+    color: var(--color2);
     height: 25vh;
     width: 25vh;
 }
