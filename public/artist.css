@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Cookies;
+    src: url(/public/fonts/Cookies.ttf);
+}
+
+:root {
+    --color1: #dfa0eb;
+    --color2: #f28be7;
+    --color3: #f6a9d3;
+    --color4: #f8d8c2;
+    --color5: #f8efb7;
+    --color-6: #ffffff;
+    --debugging: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: Cookies;
+    color: var(--color5);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* start of artist */
+.artist{
+    background-color: var(--color3);
+    padding: 20vh;
+    /* border: 1px solid var(--debugging); */
+}
+.artist header{
+    background-color: var(--color2);
+    text-align: center;
+    padding: 2vh;
+    letter-spacing: 3;
+    margin: 8px auto;
+    /* border: 1px solid var(--debugging); */
+}
+/* start of description */
+.artist .description{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.artist .description .image{
+    /* border: 1px solid var(--debugging); */
+    background-image: url(../public/images/yui.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-flex;
+    width: 40vw;
+}
+.artist .description .image, .info{
+    height: 50vh;
+}
+
+.artist .description .info{
+    /* border: 1px solid var(--debugging); */
+    font-size: 20px;
+    margin-bottom: 8vh;
+    padding: 4vh;
+    background-color: var(--color1);
+    width: 80%;
+}
+
+.info p{
+    letter-spacing: 2;
+}
+.info p b{
+    display: inline-block;
+    margin-bottom: 16px;
+    position: relative;
+    width: 28%;
+    padding-right: 4px;
+}
+
+.info p b::after{
+    content: ":";
+    position: absolute;
+    right: 4px;
+}
+
+.info table{
+    letter-spacing: 2;
+    border-collapse: collapse;
+}
+
+.info th{
+    background-color: var(--color2);
+}
+
+.info table, th, tr, td{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.info th, td{
+    padding: 1vw 4vw;
+}
+/* end of description */
+
+/* start of sample */
+.artist .sample .container{
+    padding: 8vh;
+    background-color: var(--color1);
+    margin: 8px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.artist .sample header{
+    background-color: var(--color2);
+}
+
+.sample .container div{
+    background-color: var(--color-6);
+    text-align: center;
+    line-height: 25vh;
+    background-image: url(../public/images/yui/Dazai.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25vh;
+    width: 25vh;
+}
+.sample .container div span{
+    font-size: 40px;
+    letter-spacing: 2;
+    opacity: .5;
+}
+
+/* end of sample */
+
+/* end of artist */

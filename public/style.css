@@ -5,17 +5,29 @@ https://colorhunt.co/palette/fff9caffdeb4ffb4b4b2a4ff
 */
 
 @font-face {
-    font-family: MontserratSemiBold;
+    font-family: Cookies;
     src: url(/public/fonts/Cookies.ttf);
 }
 
-:root {
+/* :root {
     --color1: #dfa0eb;
     --color2: #f28be7;
     --color3: #f6a9d3;
     --color4: #f8d8c2;
     --color5: #f8efb7;
-    --color-6: #ffffff;
+    --color6: #ffffff;
+    --debugging: red;
+} */
+
+:root {
+    --color1: #f28be7;
+    --color2:#9A93F9;
+    --color3: #0095EC;
+    --color4: #008FC4;
+    --color5: #00818B;
+    --color6: #006F50;
+    --util1: #ffffff;
+    --util2: #000000;
     --debugging: red;
 }
 
@@ -27,8 +39,8 @@ https://colorhunt.co/palette/fff9caffdeb4ffb4b4b2a4ff
 
 body {
     position: relative;
-    font-family: MontserratSemiBold;
-    color: var(--color5);
+    font-family: Cookies;
+    color: var(--util1);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -38,7 +50,7 @@ body {
 /* start of navigation */
 .navigation {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
-    background-color: var(--color2);
+    background-color: var(--color1);
     height: 10vh;
     width: 100%;
     padding: 16px;
@@ -47,7 +59,7 @@ body {
 }
 
 .navigation a {
-    color: var(--color5);
+    color: var(--util1);
     margin-right: 12px;
     text-decoration: none;
     font-size: 32px;
@@ -60,7 +72,8 @@ body {
 .content {
     height: auto;
     text-align: center;
-    background-color: var(--color3);
+    background-image: linear-gradient(to right bottom, #f28be7, #e48cec, #d58ef1, #c48ff4, #b391f7, #9f93f7, #8a94f5, #7595f2, #5995e9, #3e94de, #2292d2, #008fc4);
+    /* background-color: var(--color1); */
 }
 
 /* start of intro */
@@ -100,92 +113,131 @@ body {
 }
 /* end of intro */
 
-/* start of catalog */
+/* start of talents */
 
-.content .catalog{
-    background-color: var(--color1);
-    padding: 20vh;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+.content .talents{
+    background-image: linear-gradient(to bottom, #0095ec, #0094e2, #0093d8, #0091ce, #008fc4);
+    padding: 30vh;
+    margin: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
-.content .catalog h2{
+.content .talents h2{
     font-size: 48px;
     letter-spacing: 4px;
     margin-bottom: 4vh;
 }
 
-.content .catalog .container{
+.content .talents .container{
     display: flex;
     padding: 16px;
     border-radius: 8px;
     /* width: 100%; */
-    background-color: var(--color4);
+    /* background-color: var(--color4); */
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 20px;
 }
 
-.catalog .container div{
-    background-color: var(--color-6);
+@keyframes fade-in {
+    from {opacity: 1;}
+    to { opacity: .7; }
+}
+
+.talents .container a{
+    display: block;
+    background-color: var(--util1);
     border-radius: 4px;
-    /* height: auto;
-    width: auto; */
+    height: auto;
+    width: auto;
+}
+.talents .container a:hover{
+    animation: fade-in;
+    animation-duration: .8s;
+    animation-delay: .1s;
 }
 
-.catalog .container div img{
+
+.talents .container a img{
     padding-bottom: 8px;
     margin: 10px auto;
     display: block;
-    height: 190px;
-    width: 190px;
+    height: 200px;
+    width: 200px;
 }
 
-.catalog .container div table{
-    color: rgba(0, 0, 0, .4);
-    border-top: 1px solid rgba(0, 0, 0, .1);
-    background-color: antiquewhite;
-    border-collapse: collapse;
-}
-
-.catalog .container div table tr, td{
-    padding: 8px;
-}
-
-
-/* end of catalog */
+/* end of talents */
 
 /* start of about */
 
 .content .about{
-    padding: 20vh;
+    padding: 30vh;
     margin-left: auto;
     margin-right: auto;
     height: auto;
 }
 
 .about .description{
-    border: 1px solid var(--debugging);
-    margin-bottom: 4vh;
+    padding: 20px;
+    border-radius: 12px;
+    letter-spacing: 1.5;
+    margin-bottom: 8vw;
 }
 
 .about .description h3{
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 16px;
+    background-color: var(--color1);
     font-size: 44px;
     margin-bottom: 2vh;
 }
 
-.about .contacts{
-    border: 1px solid var(--debugging);
+.about .description p{
+    background-image: linear-gradient(to left top, #0095ec, #0094e2, #0093d8, #0091ce, #008fc4);
+    border-left: 1px solid rgba(0, 0, 0, .1);
+
 }
 
-.about .contacts h4{
+
+.about p{
+    padding: 16px;
+    font-family: Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.about h4{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-left: 1px solid rgba(0, 0, 0, .1);
     font-size: 40px;
-    margin-bottom: 2vh;
+    margin-bottom: 8px;
+    padding: 16px;
+    background-color: var(--color1);
 }
 
+.about .location{
+    display: flex;
+    flex-direction: column;
+}
+
+.about .location .map{
+    background-image: linear-gradient(to left top, #0095ec, #0094e2, #0093d8, #0091ce, #008fc4);
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: row;
+}
+
+.location .map p{
+    padding: 20px;
+    width: 60%;
+}
 /* end of about */
 
 
