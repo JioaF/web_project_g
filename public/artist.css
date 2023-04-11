@@ -1,15 +1,26 @@
 @font-face {
     font-family: Cookies;
-    src: url(/public/fonts/Cookies.ttf);
+    src: url(../public/fonts/Cookies.ttf);
 }
 
-:root {
+/* :root {
     --color1: #dfa0eb;
     --color2: #f28be7;
     --color3: #f6a9d3;
     --color4: #f8d8c2;
     --color5: #f8efb7;
     --color6: #ffffff;
+    --debugging: red;
+} */
+:root {
+    --color1: #f28be7;
+    --color2:#9A93F9;
+    --color3: #0095EC;
+    --color4: #008FC4;
+    --color5: #00818B;
+    --color6: #006F50;
+    --util1: #ffffff;
+    --util2: #000000;
     --debugging: red;
 }
 
@@ -22,7 +33,7 @@
 body {
     position: relative;
     font-family: Cookies;
-    color: var(--color6);
+    color: var(--util1);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -31,32 +42,39 @@ body {
 
 a{
     text-decoration: none;
-    color: var(--color6);
+    color: var(--util1);
 }
 
 /* start of artist */
 .artist{
-    background-color: var(--color3);
+    background-image: linear-gradient(to bottom, #0095ec, #0094e2, #0093d8, #0091ce, #008fc4);
+    /* background-image: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
     padding: 20vh;
-    /* border: 1px solid var(--debugging); */
 }
 .artist header{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     background-color: var(--color2);
     text-align: center;
     padding: 2vh;
     letter-spacing: 3;
     margin: 8px auto;
-    /* border: 1px solid var(--debugging); */
+}
+
+.artist header h1{
+    font-size: 52px;
 }
 /* start of description */
 .artist .description{
+    margin-bottom: 4vh;
     display: flex;
     flex-direction: row;
     gap: 8px;
 }
 
 .artist .description .image{
-    /* border: 1px solid var(--debugging); */
     background-image: url(../public/images/yui.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,7 +86,6 @@ a{
 }
 
 .artist .description .info{
-    /* border: 1px solid var(--debugging); */
     font-size: 20px;
     margin-bottom: 8vh;
     padding: 4vh;
@@ -79,6 +96,11 @@ a{
 .info p{
     letter-spacing: 2;
 }
+
+.info a:hover{
+    opacity: .7;
+}
+
 .info p b{
     display: inline-block;
     margin-bottom: 16px;
@@ -94,7 +116,7 @@ a{
 }
 
 .info table{
-    letter-spacing: 2;
+    letter-spacing: 1.2;
     border-collapse: collapse;
 }
 
@@ -103,7 +125,8 @@ a{
 }
 
 .info table, th, tr, td{
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 2px rgba(154, 147, 249, .6);
+    border-style: groove;
 }
 
 .info th, td{
@@ -126,8 +149,12 @@ a{
     background-color: var(--color2);
 }
 
+.sample header h2{
+    font-size: 48px;
+}
+
 .sample .container div{
-    background-color: var(--color6);
+    background-color: var(--util1);
     text-align: center;
     line-height: 25vh;
     background-image: url(../public/images/yui/Dazai.png);
