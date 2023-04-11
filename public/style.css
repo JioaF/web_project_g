@@ -6,7 +6,7 @@ https://colorhunt.co/palette/fff9caffdeb4ffb4b4b2a4ff
 
 @font-face {
     font-family: Cookies;
-    src: url(/public/fonts/Cookies.ttf);
+    src: url(./fonts/Cookies.ttf);
 }
 
 /* :root {
